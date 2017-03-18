@@ -9,11 +9,12 @@ public void run(){
      public static void main(String []args){
         System.out.println("Hello World");
         HelloWorld m1=new HelloWorld();  
-  HelloWorld m2=new HelloWorld();  
-  m1.setPriority(Thread.MIN_PRIORITY);  
+
+  	HelloWorld m2=new HelloWorld();  
+ 	m1.setPriority(Thread.MIN_PRIORITY);  
   	m1.yield();
-  m2.setPriority(Thread.MAX_PRIORITY);  
+  	m2.setPriority(Thread.MAX_PRIORITY);  
   	m1.start();  
-  m2.start();  
+  	m2.start();  
      }
 }
