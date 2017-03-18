@@ -11,9 +11,9 @@ public void run(){
         HelloWorld m1=new HelloWorld();  
   HelloWorld m2=new HelloWorld();  
   m1.setPriority(Thread.MIN_PRIORITY);  
-  m1.yield();
+  	m1.yield();
   m2.setPriority(Thread.MAX_PRIORITY);  
-  m1.start();  
+  	m1.start();  
   m2.start();  
      }
 }
